@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Пичугин](https://up.htmlacademy.ru/htmlcss/27/user/1239995).
-* Наставник: `Неизвестно`.
+* Наставник: [Vladislav Rostov](https://up.htmlacademy.ru/htmlcss/27/user/425565).
 
 ---
 
