@@ -30,6 +30,8 @@
         <li><input name="wi-fi" type="checkbox"></li>
         <label for="wi-fi">Wi-Fi</label>
       </ul>
+      </form>
+      <form>
       <p>Тип жилья</p>
       <ul>
         <li><input name="hotel" type="checkbox" checked=""></li>
@@ -39,10 +41,15 @@
         <li><input name="apartment" type="checkbox" checked=""></li>
         <label for="apartment">Апартаменты</label>
       </ul>
-      <p>
-        Стоимость в сутки(Р):
-        <input name="cost-per-night" type="range" min="0" max="5000" value="0" step="500">
-      </p>
+      </form>
+      <form>
+      <div>
+        <p>Стоимость в сутки(Р):</p>
+        <p>От О</p>
+        <input name="cost-per-night" type="range" min="0" max="5000" value="3000" step="500">
+        <output name="result">300</output>
+        <p>До</p>
+      </div>
       <button type="button">Показать</button>
   		</form>
   		<section>
