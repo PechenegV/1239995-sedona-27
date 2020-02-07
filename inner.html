@@ -18,10 +18,33 @@
   	</header>
   	<main>
   		<h1>Поиск гостинницы</h1>
-  		<section>
+  		<form>
   		<h2>Параметры поиска</h2>
   		<!--Здесь будет форма-->
-  		</section> 
+      <p>Инфраструктура</p>
+      <ul>
+        <li><input name="waterpool" type="checkbox" checked=""></li>
+        <label for="waterpool">Бассеин</label>
+        <li><input name="parking" type="checkbox"></li>
+        <label for="parking">Парковка</label>
+        <li><input name="wi-fi" type="checkbox"></li>
+        <label for="wi-fi">Wi-Fi</label>
+      </ul>
+      <p>Тип жилья</p>
+      <ul>
+        <li><input name="hotel" type="checkbox" checked=""></li>
+        <label for="hotel">Гостиница</label>
+        <li><input name="motel" type="checkbox" checked=""></li>
+        <label for="motel">Мотель</label>
+        <li><input name="apartment" type="checkbox" checked=""></li>
+        <label for="apartment">Апартаменты</label>
+      </ul>
+      <p>
+        Стоимость в сутки(Р):
+        <input name="cost-per-night" type="range" min="0" max="5000" value="0" step="500">
+      </p>
+      <button type="button">Показать</button>
+  		</form>
   		<section>
   			<h2>Резульаты поиска</h2>
   			<ul>
