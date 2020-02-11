@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Поиск отелей</title>
   </head>
   <body>
   	<header>
@@ -17,44 +17,62 @@
   		</nav>
   	</header>
   	<main>
-  		<h1>Поиск гостинницы</h1>
+  		<h1 class="visually-hidden">Поиск гостинницы</h1>
   		<form>
-  		<h2>Параметры поиска</h2>
-  		<!--Здесь будет форма-->
-      <p>Инфраструктура</p>
-      <ul>
-        <li><input name="waterpool" type="checkbox" checked=""></li>
-        <label for="waterpool">Бассеин</label>
-        <li><input name="parking" type="checkbox"></li>
-        <label for="parking">Парковка</label>
-        <li><input name="wi-fi" type="checkbox"></li>
-        <label for="wi-fi">Wi-Fi</label>
-      </ul>
-      </form>
-      <form>
-      <p>Тип жилья</p>
-      <ul>
-        <li><input name="hotel" type="checkbox" checked=""></li>
-        <label for="hotel">Гостиница</label>
-        <li><input name="motel" type="checkbox" checked=""></li>
-        <label for="motel">Мотель</label>
-        <li><input name="apartment" type="checkbox" checked=""></li>
-        <label for="apartment">Апартаменты</label>
-      </ul>
-      </form>
-      <form>
-      <div>
-        <p>Стоимость в сутки(Р):</p>
-        <p>От О</p>
-        <input name="cost-per-night" type="range" min="0" max="5000" value="3000" step="500">
-        <output name="result">300</output>
-        <p>До</p>
-      </div>
+  		<h2 class="visually-hidden">Параметры поиска</h2>
+  		<!--Вопрос по форме.Нужны ли мне fieldset? На сколько я понимаю, в рамках этого тега мы можем дать подсказку с помощью атрибута title.
+      Это обязательный тегдля формы состоящей из нескольких полей, или можно обойтись без него? Если нельзя,то возможно и все заголовки h3 поубирать?-->
+      <h3>Инфраструктура</h3>
+      <fieldset title="Выберите одну или несколько опций">
+        <legend>Инфраструктура</legend>
+            <ul>
+              <li>
+                <input name="waterpool" type="checkbox" checked="">
+                <label for="waterpool">Бассеин</label>
+              </li>
+              <li>
+                <input name="parking" type="checkbox">
+                <label for="parking">Парковка</label>
+             </li>
+              <li>
+               <input name="wi-fi" type="checkbox">
+               <label for="wi-fi">Wi-Fi</label>
+              </li>   
+            </ul>
+      </fieldset>
+      <h3>Тип жилья</h3>
+      <fieldset title="Выберите один или несколько типов жилья">
+        <legend>Тип жилья</legend>
+          <ul>
+            <li>
+              <input name="hotel" type="checkbox" checked="">
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input name="motel" type="checkbox" checked="">
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+             <input name="apartment" type="checkbox" checked="">
+             <label for="apartment">Апартаменты</label>
+            </li>
+          </ul>
+      </fieldset>
+        <div>
+          <h3>Стоимость в сутки(Р):</h3>
+          <fieldset title="Укажите стоимость, которую вы готовы потратить в сутки">
+            <legend>Стоимость в сутки(Р):</legend>
+              <p>От О</p>
+              <input name="cost-per-night" type="range" min="0" max="5000" value="3000" step="500">
+              <output name="result">300</output>
+              <p>До</p>
+          </fieldset>
+        </div>
       <button type="button">Показать</button>
   		</form>
   		<section>
-  			<h2>Резульаты поиска</h2>
-  			<ul>
+  			<h2 class="visually-hidden">Резульаты поиска</h2>
+        <ul>
   				<li>
   					<img src="img/Amara_Resort_&_Spa.png" width="135" height="90" alt="Фото гостинницы с видом на горы">
   					<div>

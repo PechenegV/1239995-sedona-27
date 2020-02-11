@@ -17,15 +17,16 @@
   		</nav>
   	</header>
   	<main>
-  		<h1>Добро пожаловать в Седону</h1>
+  		<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
   		<section>
-		<h2>Седона — небольшой городок в Аризоне,
+  		<!--возможно тэг <b> -->
+		<h3>Седона — небольшой городок в Аризоне,
 		заслуживающий большего!
-		</h2>
+		</h3>
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 		</section>
 		<section>
-			<h2>Преимущества</h2>
+			<h2 class="visually-hidden">Преимущества</h2>
 			<ol>
 				<li>
 					<img src="img/view_1.png" width="800" height="256" alt="Фотография города">
@@ -72,8 +73,12 @@
 		<section>
 			<h2>Заинтересовались?</h2>
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+			<button type="button">Поиск гостиницы в Седоне</button>
 		</section>
-		<!--Место для карты-->
+		<section>
+			<h2>Где находится Седона?</h2>
+			<img src="img\map.jpg" width="1200" height="594" alt="Карта штата">
+		</section>
   	</main>
   	<footer>
   		<a href="#">#visitSEDONA</a>
@@ -86,15 +91,18 @@
   		<p>Website by:<a href="https://up.htmlacademy.ru/htmlcss/27"><img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy"></a></p>
   	</footer>
   			<section>
-			<h2>Поиск гостиницы в Седоне</h2>
-			
+			<h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+			<!-- У меня возник вопрос какой метод выбирать в этой форме?
+				при нажатии на кнопку данные отправляются на сервер и возвращаются другие?
+				Или это ссылка на другую страницу,с предустановленной датой?-->
+			<form action="https://echo.htmlacademy.ru" method="post">
 			<p>
-			<label for="date-arrival">Дата заезда:</label>
-			<input id="date-arrival" type="date" name="arrival" placeholder="Дата заезда">
+				<label for="date-arrival">Дата заезда:</label>
+				<input id="date-arrival" type="date" name="arrival" value="2017-04-24" placeholder="Дата заезда">
 			</p>
 			<p>
-			<label for="date-departure">Дата выезда:</label>
-			<input id="date-departure" type="date" name="departure" placeholder="Дата выезда">
+				<label for="date-departure">Дата выезда:</label>
+				<input id="date-departure" type="date" name="departure" value="2017-07-04" placeholder="Дата выезда">
 			</p>
 			<p>
 				<label for="adults">Взрослые:</label>
@@ -104,8 +112,8 @@
 				<label for="children">Дети:</label>
 				<input name="children" type="number" min="1" value="1" >
 			</p>
-			<button type="button">Найти</button>
-			
+			<button type="submit">Найти</button>
+			</form>
 		</section>
   </body>
 </html>
