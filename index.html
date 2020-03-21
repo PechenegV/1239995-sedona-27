@@ -7,38 +7,36 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="index.html"><img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона"></a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="inner.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <section class="main-hero">
-        <div class="hero-img">
-          <img width="640px" height="309px" src="img/welcome.svg">
-        </div>
-        <div>
+  <body class="body">
+    <div class="main-hero">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и Видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="inner.html">Гостиницы</a></li>
+          </ul>
+          <a class="logo-link" href="index.html"><img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона"></a>
+        </nav>
+      </header>
+      <div class="offer">
+        <div class="offer-wrap">
           <b>Седона — небольшой городок в Аризоне,
           заслуживающий большего!
           </b>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-      </section>
+      </div>
+    </div>
+    <main class="container">
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-        <ol class="features-list">
-          <li class="feature-item blue">
-            <img src="img/view_1.png" width="800" height="256" alt="Фотография города">
-            <h3>Настоящий городок</h3>
-            <p>— №1 —<br>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="blue">
+          <div><h3>Настоящий городок</h3>
+          <p>— №1 —</p><p>Седона — не аттракцион для туристов, там течёт своя жизнь</p></div>
+          <img src="img/view_1.png" width="800" height="256" alt="Фотография города">
+        </div>
             <h2 class="visually-hidden">Рекомендации</h2>
             <ul class="advices">
               <li class="advice">
@@ -57,34 +55,40 @@
                 <p>Не только Китайского, но и местного производства!</p>
               </li>
             </ul>
-          </li>
-          <li class="feature-item blue">
-            <h3>Там есть мост дьвола</h3>
-            <p>— №2 —<br>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/view_2.png" width="800" height="256" alt="Фотография моста дьявола">
+          <div class="blue">
+              <img src="img/view_2.png" width="800" height="256" alt="Фотография моста дьявола">
+              <div><h3>Там есть мост дьвола</h3>
+              <p>— №2 —</p><p>Да, по нему можно пройти! Если конечно вы осмелитесь</p></div>
+          </div>
+        <ul class="features-list">
+          <li class="feature-item">
+            <div>
+              <h3>Небольшая площадь</h3>
+              <p>— №3 —</p><p>Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —<br>Все достопримечательности находятся очень близко</p>
+            <div>
+              <h3>Красивая дорога</h3>
+              <p>— №4 —</p><p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
           <li class="feature-item">
-            <h3>Красивая дорога</h3>
-            <p>— №4 —<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div>
+              <h3>Мало туристов</h3>
+              <p>— №5 —</p><p>Большинство едет в гранд каньон &nbsp;&nbsp; и толпится там</p>
+            </div>
           </li>
-          <li class="feature-item">
-            <h3>Мало туристов</h3>
-            <p>— №5 —<br>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ol>
+        </ul>
       </section>
       <section class="capture-form">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button class="brown-button" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <section>
+      <section class="map">
         <h2 class="visually-hidden">Где находится Седона?</h2>
-        <img src="img\map.jpg" width="1200" height="594" alt="Карта штата">
+        <img src="img/map.jpg" width="1200" height="594" alt="Карта штата">
       </section>
     </main>
     <footer class="footer">
@@ -95,7 +99,7 @@
       <ul class="footer-social">
         <li class="social-button">
           <a href="#">
-            Twitter
+            <span class="visually-hidden">Twitter</span>
             <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
               <title>Twitter</title>
@@ -110,7 +114,7 @@
         </li>
         <li class="social-button">
           <a href="#">
-            Facebook
+            <span class="visually-hidden">Facebook</span>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
               <title>Facebook</title>
@@ -120,7 +124,7 @@
         </li>
         <li class="social-button">
           <a href="#">
-            Youtube
+            <span class="visually-hidden">Youtube</span>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
               <title>Youtube</title>
@@ -131,7 +135,7 @@
         </li>
       </ul>
       <p class="footer-copyright">
-        Website by:
+        <span>Website by</span>
         <a class="footer-copyright-link" href="https://up.htmlacademy.ru/htmlcss/27">
           <svg width="115" height="41"  data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
             <title>HTML ACDEMY</title>
@@ -154,22 +158,87 @@
     <section class="modal-search">
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label for="date-arrival">Дата заезда:</label>
-          <input class="search-dare-arrival" id="date-arrival" type="date" name="arrival" value="2017-04-24" placeholder="Дата заезда">
-        </p>
-        <p>
-          <label for="date-departure">Дата выезда:</label>
-          <input class="search-dare-departure" id="date-departure" type="date" name="departure" value="2017-07-04" placeholder="Дата выезда">
-        </p>
-        <p>
-          <label for="adults">Взрослые:</label>
-          <input class="search-adults" name="adults" type="number" min="1" value="1" >
-        </p>
-        <p>
-          <label for="children">Дети:</label>
-          <input class="search-children" name="children" type="number" min="1" value="1" >
-        </p>
+        <div class="change-date">
+          <p class="arrival-wrap">
+            <label for="date-arrival">Дата заезда:</label>
+            <input class="search-date arrival" id="date-arrival" type="date" name="arrival" value="2017-04-24">
+            <button type="button" class="calendar" id="button-arrival"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+           <g>
+             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+               c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+               c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+               C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+               c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+               c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+               v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+             <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+             <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+             <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+             <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+             <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+             <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+             <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+             <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+             <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+           </g>
+           </svg></button>
+          </p>
+          <p class="departure-wrap">
+            <label for="date-departure">Дата выезда:</label>
+            <input class="search-date departure" id="date-departure" type="date" name="departure" value="2017-07-04">
+            <button type="button" class="calendar" id="button-departure">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve">
+           <g>
+             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+               c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+               c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+               C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+               c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+               c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+               v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+             <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+             <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+             <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+             <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+             <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+             <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+             <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+             <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+             <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+           </g>
+           </svg></button>
+          </p>
+        </div>
+        <div class="tourist">
+            <label for="adults">Взрослые:</label>
+            <div class="input-container">
+              <button type="button" class="button-less less-adults" id="less-adults">
+                <svg width="12px" height="3px"><rect width="12px" height="3px"/></svg>
+              </button>
+              <input class="search-adults" name="adults" type="number" min="1" value="1" id="adults">
+              <button type="button" class="button-add add-adults" id="add-adults">
+                <svg width="11px" height="11px">
+                  <rect x="0" y="4" width="12px" height="3px"/>
+                  <rect x="4" y="0"  width="3px" height="12px"/>
+                </svg>
+              </button>
+            </div>
+            <label for="children">Дети:</label>
+            <div class="input-container">
+              <button type="button" class="button-less less-child" id="less-child">
+                <svg width="12px" height="3px"><rect width="12px" height="3px"/></svg>
+              </button>
+              <input class="search-children" name="children" type="number" min="1" value="1" id="children">
+              <button type="button" class="button-add add-child" id="add-child">
+                <svg width="11px" height="11px">
+                  <rect x="0" y="4" width="12px" height="3px"/>
+                  <rect x="4" y="0"  width="3px" height="12px"/>
+                </svg>
+              </button>
+            </div>
+        </div>
         <button class="blue-button" type="submit">Найти</button>
       </form>
     </section>
