@@ -1,0 +1,1 @@
+var link=document.querySelector(".brown-button"),popup=document.querySelector(".modal-search"),form=popup.querySelector("form"),exit=document.querySelector(".map");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")}),form.addEventListener("submit",function(e){e.preventDefault(),popup.classList.remove("modal-show")});
