@@ -387,6 +387,12 @@ li .current-nav {
 	margin: 0px;
 }
 
+.interactive-map {
+	width: 1200px;
+	height: 593px;
+	border: none;
+}
+
 /* Кнопка открытия модального окна */
 
 .brown-button {
